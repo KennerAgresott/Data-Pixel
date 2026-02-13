@@ -2,30 +2,28 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Data Pixel - Login</title>
-<link rel="stylesheet" href="style.css">
+<title>Data Pixel</title>
+<link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
 <div class="card">
+    <img src="logo.pixel.png" class="logo">
 
 <h2>DATA PIXEL</h2>
 
-<input type="text" id="user" placeholder="Usuario">
-<input type="password" id="pass" placeholder="Contraseña">
+<input id="user" placeholder="Usuario">
+<input id="pass" type="password" placeholder="Contraseña">
 
-<button onclick="login()">Iniciar sesión</button>
+<button onclick="login()">Ingresar</button>
 
-<p class="link" onclick="irRegistro()">
-¿No tienes cuenta? Registrarse
-</p>
+<p class="link" onclick="irRegistro()">Crear cuenta</p>
 
 <p id="error"></p>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
-</html> 
+</html>

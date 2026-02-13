@@ -2,30 +2,28 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Registrar usuario</title>
-<link rel="stylesheet" href="style.css">
+<title>Registro</title>
+<link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-<div class="card">
+<div class="card"> 
+     <img src="logo.pixel.png" class="logo">
 
-<h2>Crear cuenta</h2>
+<h2>Registrar usuario</h2>
 
-<input type="text" id="newUser" placeholder="Nuevo usuario">
-<input type="password" id="newPass" placeholder="Contraseña">
+<input id="newUser" placeholder="Usuario">
+<input id="newPass" type="password" placeholder="Contraseña">
 
-<button onclick="registrar()">Registrar</button>
+<button onclick="registrar()">Guardar</button>
 
-<p class="link" onclick="volverLogin()">
-← Volver al inicio
-</p>
+<p class="link" onclick="volverLogin()">Volver</p>
 
 <p id="error"></p>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
-</html> 
+</html>

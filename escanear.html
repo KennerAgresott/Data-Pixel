@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Escaneo</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body onload="verificarSesion()">
+
+<div class="card big">
+    <img src="logo.pixel.png" class="logo">
+
+<h2>Escaneo activo</h2>
+
+<p id="robotEstado">Esperando orden...</p>
+
+<button onclick="simularEscaneo()">Escanear producto</button>
+
+<ul id="escaneoLog"></ul>
+
+<p class="link" onclick="irPanel()">Volver</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

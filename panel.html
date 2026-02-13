@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Centro de Control</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body onload="verificarSesion()">
+
+<div class="card big">
+    <img src="logo.pixel.png" class="logo">
+
+<h2>Centro de Control</h2>
+<p id="bienvenida"></p>
+
+<div class="menu-grid">
+
+<button onclick="irEscaneo()">Iniciar escaneo</button>
+<button onclick="irBusqueda()">Consultar inventario</button>
+
+</div>
+
+<button class="logout" onclick="logout()">Cerrar sesión</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

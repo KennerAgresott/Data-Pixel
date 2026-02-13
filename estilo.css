@@ -1,0 +1,232 @@
+/* ===== FONDO ANIMADO ELEGANTE ===== */
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+background:#020617;
+color:white;
+position:relative;
+}
+
+/* ondas suaves de luz */
+
+body::before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+background:
+radial-gradient(circle at 30% 40%, rgba(56,189,248,0.25), transparent 40%),
+radial-gradient(circle at 70% 60%, rgba(14,165,233,0.25), transparent 40%);
+animation:ondas 10s ease-in-out infinite alternate;
+}
+
+@keyframes ondas{
+from{transform:translate(-5%, -5%) scale(1);}
+to{transform:translate(5%, 5%) scale(1.1);}
+}
+
+/* ===== TARJETA VIDRIO PREMIUM ===== */
+
+.card{
+width:370px;
+padding:34px;
+border-radius:24px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(18px);
+box-shadow:
+0 20px 50px rgba(0,0,0,0.8),
+inset 0 0 20px rgba(255,255,255,0.08);
+text-align:center;
+animation:entrada 0.7s ease;
+transition:0.3s;
+position:relative;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:
+0 30px 70px rgba(0,0,0,0.9);
+}
+
+.big{
+width:440px;
+}
+
+@keyframes entrada{
+from{
+opacity:0;
+transform:translateY(25px) scale(0.96);
+}
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
+
+/* brillo sutil interior */
+
+.card::after{
+content:"";
+position:absolute;
+inset:0;
+border-radius:24px;
+background:linear-gradient(120deg,
+transparent,
+rgba(255,255,255,0.25),
+transparent);
+opacity:0.25;
+pointer-events:none;
+}
+
+/* ===== LOGO PREMIUM ===== */
+
+.logo{
+width:115px;
+margin-bottom:12px;
+animation:flotar 4s ease-in-out infinite;
+filter:drop-shadow(0 0 25px rgba(56,189,248,0.7));
+}
+
+@keyframes flotar{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+/* ===== INPUTS ELEGANTES ===== */
+
+input{
+width:100%;
+padding:14px;
+margin:9px 0;
+border:none;
+border-radius:14px;
+background:rgba(255,255,255,0.15);
+color:white;
+outline:none;
+transition:0.3s;
+}
+
+input::placeholder{
+color:#cbd5f5;
+}
+
+input:focus{
+background:rgba(255,255,255,0.3);
+box-shadow:0 0 15px rgba(56,189,248,0.7);
+transform:scale(1.02);
+}
+
+/* ===== BOTONES ENERGÍA LIMPIA ===== */
+
+button{
+width:100%;
+padding:14px;
+margin-top:10px;
+border:none;
+border-radius:14px;
+font-weight:bold;
+cursor:pointer;
+background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+color:white;
+transition:all 0.25s ease;
+position:relative;
+overflow:hidden;
+}
+
+button:hover{
+transform:translateY(-2px) scale(1.03);
+box-shadow:0 10px 25px rgba(56,189,248,0.6);
+}
+
+/* brillo que cruza el botón */
+
+button::before{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:120%;
+height:100%;
+background:linear-gradient(90deg,
+transparent,
+rgba(255,255,255,0.5),
+transparent);
+transition:0.5s;
+}
+
+button:hover::before{
+left:120%;
+}
+
+button:active{
+transform:scale(0.97);
+}
+
+/* logout */
+
+.logout{
+background:linear-gradient(135deg,#ef4444,#dc2626);
+}
+
+/* ===== LINKS ===== */
+
+.link{
+margin-top:12px;
+cursor:pointer;
+color:#cbd5f5;
+transition:0.3s;
+}
+
+.link:hover{
+color:white;
+text-shadow:0 0 10px rgba(56,189,248,0.7);
+}
+
+/* ===== GRID ===== */
+
+.menu-grid{
+display:grid;
+gap:15px;
+margin:18px 0;
+}
+
+/* ===== LISTAS PREMIUM ===== */
+
+ul{
+list-style:none;
+padding:0;
+text-align:left;
+max-height:200px;
+overflow:auto;
+}
+
+li{
+background:rgba(255,255,255,0.18);
+padding:10px;
+margin:6px 0;
+border-radius:12px;
+transition:0.25s;
+}
+
+li:hover{
+background:rgba(255,255,255,0.35);
+transform:translateX(6px);
+}
+
+/* scroll elegante */
+
+ul::-webkit-scrollbar{
+width:6px;
+}
+
+ul::-webkit-scrollbar-thumb{
+background:#38bdf8;
+border-radius:5px;
+}
+
